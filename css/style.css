@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: #000;
+
+}
+header h1{
+    color: #fff;
+    text-align: center;
+}
+#image_container{
+    display: flex;
+    margin-top: 20px;
+    margin:20px 10%
+   
+}
+#image_container img{
+    width: 16.5%;
+    height: 90%;
+    margin:0
+    
+}

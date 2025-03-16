@@ -18,19 +18,30 @@ function displayRamens(){
     img.src = ramens[i].image
     img.alt = 'ramen dish'
     div1.appendChild(img)
-    img.addEventListener('click',handleClick)
+    img.addEventListener('click',() => handleClick(ramens[i]))
+    
 
    }
 
 }
 displayRamens()
-const div3= document.querySelector('#image_change')
-const div4 = document.createElement('div')
-div3.append(div4)
-div4.setAttribute('id','ramen-detail')
-function handleClick(){
-   const ramdetail = document.getElementById('ramen-detail')
-   console.log(document.getElementById('ramen-rating'))
 
+function handleClick(ramen){
+  const phi= document.getElementById('detail-image')
+  phi.src=ramen.image
+  const dn= document.getElementById('detail-name')
+  dn.textContent = ramen.name
+  const dr=document.getElementById('detail-restaurant')
+  dr.textContent = ramen.restaurant 
+  const rr= document.getElementById('rating-display')
+  rr.textContent= ramen.rating
+  const rc= document.getElementById('comment-display')
+  rc.textContent = ramen.comment
 }
-handleClick()
+
+const formsub = document.getElementById('ramen_form')
+   formsub.addEventListener('submit',addSubmitListener)
+
+function addSubmitListener(r){
+  
+}

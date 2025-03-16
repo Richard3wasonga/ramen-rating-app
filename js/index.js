@@ -22,6 +22,7 @@ function displayRamens(){
     
 
    }
+   handleClick(ramens[0])
 
 }
 displayRamens()

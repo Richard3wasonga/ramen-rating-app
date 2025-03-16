@@ -43,6 +43,6 @@ function handleClick(ramen){
 const formsub = document.getElementById('ramen_form')
    formsub.addEventListener('submit',addSubmitListener)
 
-function addSubmitListener(r){
+function addSubmitListener(){
   
 }

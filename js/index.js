@@ -43,5 +43,15 @@ const formsub = document.getElementById('ramen_form')
    formsub.addEventListener('submit',addSubmitListener)
 
 function addSubmitListener(r){
-  
+   r.preventDefault();
+   const newramen={
+      name: r.target.name.value,
+      image: r.target.image.value,
+      rating: r.target.rating.value,
+      restaurant:r.target.restaurant.value,
+      comment: r.target.comment.value,
+   }
+   ramens.push(newramen);
+   addramen(newramen);
+   r.target.reset();
 }

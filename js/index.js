@@ -71,3 +71,7 @@ function addSubmitListener(){
   
 }
 addSubmitListener();
+function main(){
+   displayRamens()
+   addSubmitListener()
+}

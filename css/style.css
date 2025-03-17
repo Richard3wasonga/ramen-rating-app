@@ -13,17 +13,17 @@ header h1{
 }
 #image_container{
     display: flex;
-    margin-top: 20px;
     justify-content: center;
     
-    
-   
 }
-#image_container img{
-    width: 200px;
+#ramen-menu{
+    display: flex;
+    gap: 10px;
     height: 200px;
-    
-  
+    width: 200px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #form_cont input{

@@ -4,7 +4,6 @@ const ramens = [
     { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "images/tonkotsu.jpg", rating:6, comment:"Divine!" },
     { id: 4, name: "Gyukotsu Ramen", restaurant: "Sakura Sushi Bar", image: "images/gyukotsu.jpg", rating:8, comment:"So Succulent!" },
     { id: 5, name: "Naruto Ramen", restaurant: "Kuuraku", image: "images/naruto.jpg" , rating:5, comment:"Luscious!"},
-    
     { id: 6, name: "Nirvana Ramen", restaurant: "Yakitori Grill", image: "images/nirvana.jpg", rating: 9, comment:"Buttery!" },
  ];
 const div1 = document.querySelector('div')

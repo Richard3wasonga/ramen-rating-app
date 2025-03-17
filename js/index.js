@@ -4,6 +4,7 @@ const ramens = [
     { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "images/tonkotsu.jpg", rating:6, comment:"Divine!" },
     { id: 4, name: "Gyukotsu Ramen", restaurant: "Sakura Sushi Bar", image: "images/gyukotsu.jpg", rating:8, comment:"So Succulent!" },
     { id: 5, name: "Naruto Ramen", restaurant: "Kuuraku", image: "images/naruto.jpg" , rating:5, comment:"Luscious!"},
+    
     { id: 6, name: "Nirvana Ramen", restaurant: "Yakitori Grill", image: "images/nirvana.jpg", rating: 9, comment:"Buttery!" },
  ];
 const div1 = document.querySelector('div')
@@ -47,17 +48,16 @@ function addSubmitListener(){
       e.preventDefault();
 
   const newRamenInfo={
+   id: ramens.length + 1,
    name: e.target.name.value,
    restaurant: e.target.restaurant.value,
    image: e.target.image.value,
-   rating: e.target.rating.value,
+   rating: parseInt(e.target.rating.value),
    comment: e.target.comment.value,
   }
   ramens.push(newRamenInfo)
 
-  //if(!name || !restaurant || !image || !isNaN(rating) || !comment){
-   //return alert("Fill all black spaces")
-  //}
+  
   
   const ramenmenu= document.getElementById("ramen-menu")
   const img = document.createElement('img')
@@ -66,7 +66,8 @@ function addSubmitListener(){
   img.addEventListener("click",() => handleClick(newRamenInfo));
   ramenmenu.appendChild(img)
   formsub.reset();
- })
+ });
 
   
 }
+addSubmitListener();

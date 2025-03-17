@@ -40,9 +40,33 @@ function handleClick(ramen){
   rc.textContent = ramen.comment
 }
 
-const formsub = document.getElementById('ramen_form')
-   formsub.addEventListener('submit',addSubmitListener)
 
 function addSubmitListener(){
+   const formsub = document.getElementById('ramen_form')
+   formsub.addEventListener('submit',(e) => {
+      e.preventDefault();
+
+  const newRamenInfo={
+   name: e.target.name.value,
+   restaurant: e.target.restaurant.value,
+   image: e.target.image.value,
+   rating: e.target.rating.value,
+   comment: e.target.comment.value,
+  }
+  ramens.push(newRamenInfo)
+
+  //if(!name || !restaurant || !image || !isNaN(rating) || !comment){
+   //return alert("Fill all black spaces")
+  //}
+  
+  const ramenmenu= document.getElementById("ramen-menu")
+  const img = document.createElement('img')
+  img.src= newRamenInfo.image
+  img.alt= newRamenInfo.name
+  img.addEventListener("click",() => handleClick(newRamenInfo));
+  ramenmenu.appendChild(img)
+  formsub.reset();
+ })
+
   
 }

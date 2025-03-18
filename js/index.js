@@ -13,15 +13,13 @@ div2.setAttribute('id','ramen-menu' )
 
 function displayRamens(){
    const div1= document.getElementById('ramen-menu')
-   for(let i = 0;i < ramens.length;i++){
+   ramens.forEach((ramen) => {
     let img = document.createElement('img')
-    img.src = ramens[i].image
-    img.alt = 'ramen dish'
+    img.src = ramen.image
+    img.alt = ramen.name
     div1.appendChild(img)
-    img.addEventListener('click',() => handleClick(ramens[i]))
-    
-
-   }
+    img.addEventListener('click',() => handleClick(ramen))
+   })
    handleClick(ramens[0])
 
 }

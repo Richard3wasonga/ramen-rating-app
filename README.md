@@ -8,7 +8,7 @@ The **Ramen Rater** project is a simple web application that allows users to bro
 - Displays a list of ramen dishes with images.
 - Clicking on an image updates the ramen details section.
 - Users can add new ramen dishes via a form.
-- Newly added ramens appear in the menu and can be interacted with.
+- Newly added ramen appears in the menu and can be interacted with.
 - Responsive design for better user experience.
 
 ## Technologies Used
@@ -31,7 +31,7 @@ Since this project is purely front-end, no additional installation is required b
 
 ## Usage
 - Click on a ramen image to view its details.
-- Fill out the form and submit to add a new ramen dish.
+- Fill out the form and submit it to add a new ramen dish.
 - Newly added ramen will appear in the menu and can be clicked to view details.
 
 ## Code Overview
@@ -55,7 +55,7 @@ Since this project is purely front-end, no additional installation is required b
 ### JavaScript Functions
 - `displayRamens()`: Renders ramen images in the menu and sets up event listeners.
 - `handleClick(ramen)`: Updates the detail section when a ramen image is clicked.
-- `addSubmitListener()`: Handles form submissions, adds new ramen data, and updates the menu.
+- `addSubmitListener()`: Handles form submissions, adds new ramen data and updates the menu.
 - `main()`: Initializes the application.
 
 ### Data Structure
@@ -71,7 +71,7 @@ The `ramens` array stores ramen objects containing:
 - Implement local storage to persist added ramens.
 - Add a feature to delete ramen entries.
 - Improve styling with CSS animations.
-- Maki the web apllication mobile responsive
+- Make the web application mobile-responsive
 
 ## License
 This project is licensed under the MIT License.

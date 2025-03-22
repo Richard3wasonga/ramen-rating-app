@@ -71,6 +71,7 @@ The `ramens` array stores ramen objects containing:
 - Implement local storage to persist added ramens.
 - Add a feature to delete ramen entries.
 - Improve styling with CSS animations.
+- Maki the web apllication mobile responsive
 
 ## License
 This project is licensed under the MIT License.
